@@ -63,7 +63,7 @@ export const loginUser = async (userData) => {
 
 export const getLoggedInStatus = async () => {
     try {
-        const response = await axios.get(`${BACKEND_URL}/api/users//loggedin`);
+        const response = await axios.get(`${BACKEND_URL}/api/users/loggedin`);
         if (response.statusText === "OK") {
             console.log("smt")
         };

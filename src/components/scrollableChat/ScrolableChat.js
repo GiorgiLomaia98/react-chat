@@ -55,7 +55,7 @@ const ScrolableChat = ({ messages }) => {
                 maxWidth: "75%",
               }}
             >
-                  {selectedChat && selectedChat?.isGroupChat ? <p> <span style={{fontWeight:"bolder"}}>{ loggedUser && loggedUser?._id ===  message?.sender?._id  ?  "you"  :  message?.sender?.name }:</span>{message?.content}</p>    :    <span>{message?.content}</span>}
+                  {selectedChat && selectedChat?.isGroupChat ? <p> <span style={{fontWeight:"bolder"}}>{ loggedUser && loggedUser?._id !==  message?.sender?._id  &&  message?.sender?.name }:</span>{message?.content}</p>    :    <span>{message?.content}</span>}
             </span>
               </Box>
           )

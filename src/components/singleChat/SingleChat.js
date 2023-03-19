@@ -18,7 +18,7 @@ import {FiSend} from "react-icons/fi"
 
 import io from "socket.io-client";
 
-const ENDPOINT = `http://localhost:5000`;
+const ENDPOINT = `https://fullstack-chat-app-backend-production.up.railway.app`;
 var soket;
 var selectedChatCompare;
 const SingleChat = () => {
